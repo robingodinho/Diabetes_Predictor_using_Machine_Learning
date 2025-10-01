@@ -2,7 +2,7 @@
 
 A data-driven healthcare solution that predicts diabetes diagnosis using machine learning to help identify at-risk patients early and enable preventive interventions.
 
-![Diabetes Feature Analysis](.png)
+![Diabetes Feature Analysis](https://github.com/robingodinho/Diabetes_Predictor_using_Machine_Learning/blob/main/Diabetes_Predictor.png)
 
 ## Table of Contents
 
