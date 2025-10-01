@@ -1,7 +1,7 @@
 # Diabetes Prediction using Machine Learning
 
 A machine learning project that predicts diabetes diagnosis using the Pima Indians Diabetes Dataset. This project demonstrates data preprocessing, feature selection, model training, and evaluation using logistic regression.
-![Data_Analysis]()
+![Data_Analysis](https://github.com/robingodinho/Diabetes_Predictor_using_Machine_Learning/blob/main/Diabetes_Predictor.png)
 
 ## Table of Contents
 - [Overview](#overview)
@@ -59,11 +59,11 @@ Dataset source: [Kaggle - Pima Indians Diabetes Database](https://www.kaggle.com
 - Confusion Matrix
 - Classification Report (Precision, Recall, F1-Score)
 
-## Installation
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/diabetes-prediction.git
-cd diabetes-prediction
+# Results
+Model Predictions
 
-# Install required packages
-pip install pandas numpy scikit-learn matplotlib seaborn
+- Accuracy: 79.87%
+- Precision (Class 0): 0.84
+- Recall (Class 0): 0.88
+- Precision (Class 1): 0.70
+- Recall (Class 1): 0.63
