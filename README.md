@@ -67,3 +67,31 @@ Model Predictions
 - Recall (Class 0): 0.88
 - Precision (Class 1): 0.70
 - Recall (Class 1): 0.63
+
+# Confusion Matrix
+
+[[92 13]
+ [18 31]]
+
+# Key Findings
+- The model performs better at identifying non-diabetic patients (88% recall)
+- Higher false negative rate (18) indicates room for improvement in detecting diabetic cases
+- Class imbalance (105 non-diabetic vs 49 diabetic samples) affects model performance
+
+# Tech Stack
+- Python 3.7
+- pandas: Data manipulation and analysis
+- numpy: Numerical computations
+- scikit-learn: Machine learning algorithms and tools
+- matplotlib: Data visualization
+- seaborn: Statistical data visualization
+
+# License 
+This project is open source and available under the MIT License.
+
+# Author
+Robin Godinho
+
+# Ackowledgements
+- Dataset provided by the National Institute of Diabetes and Digestive and Kidney Diseases
+- Kaggle community for dataset hosting and documentation
