@@ -1,59 +1,69 @@
-# Diabetes Prediction Using Machine Learning
+# Diabetes Prediction using Machine Learning
 
-A data-driven healthcare solution that predicts diabetes diagnosis using machine learning to help identify at-risk patients early and enable preventive interventions.
-
-![Diabetes Feature Analysis](https://github.com/robingodinho/Diabetes_Predictor_using_Machine_Learning/blob/main/Diabetes_Predictor.png)
+A machine learning project that predicts diabetes diagnosis using the Pima Indians Diabetes Dataset. This project demonstrates data preprocessing, feature selection, model training, and evaluation using logistic regression.
+![Data_Analysis]()
 
 ## Table of Contents
+- [Overview](#overview)
+- [Dataset](#dataset)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Results](#results)
+- [Technologies Used](#technologies-used)
+- [Future Improvements](#future-improvements)
+- [License](#license)
 
-1. [Business Problem](#business-problem)
-2. [Solution Approach](#solution-approach)
-3. [Project Features](#project-features)
-4. [Technical Overview](#technical-overview)
-5. [Dataset](#dataset)
-6. [Results & Insights](#results--insights)
-7. [Applications & Potential Impact](#applications--potential-impact)
-8. [How to Run the Analysis](#how-to-run-the-analysis)
-9. [Key Findings](#key-findings)
-10. [Future Enhancements](#future-enhancements)
-11. [Get Involved](#get-involved)
-12. [License](#license)
+## Overview
 
-## Business Problem
+This project builds a predictive model to determine whether a patient has diabetes based on various health measurements. The workflow includes:
+- Data loading and exploratory analysis
+- Feature selection using correlation and variance thresholding
+- Data visualization
+- Model training using Logistic Regression
+- Model evaluation with multiple metrics
 
-Diabetes affects millions globally, presenting significant medical, social, and economic challenges. **Early detection is critical** for improving patient outcomes and reducing healthcare costs. However, manual screening processes are resource-intensive and may miss at-risk individuals.
+## Dataset
 
-This project addresses the need for **automated, data-driven diabetes risk assessment** by:
-- Reducing diagnostic costs through predictive screening
-- Enabling early intervention for at-risk patients
-- Supporting healthcare providers with evidence-based risk stratification
-- Improving resource allocation in clinical settings
+The **Pima Indians Diabetes Dataset** contains medical records from adult female patients of Pima Indian heritage. 
 
-## Solution Approach
+### Features:
+- **Pregnancies**: Number of pregnancies
+- **Glucose**: Plasma glucose concentration (2-hour oral glucose tolerance test)
+- **BloodPressure**: Diastolic blood pressure (mm Hg)
+- **SkinThickness**: Triceps skinfold thickness (mm)
+- **Insulin**: 2-hour serum insulin (μU/ml)
+- **BMI**: Body mass index (weight in kg/(height in m)²)
+- **DiabetesPedigreeFunction**: Genetic predisposition score
+- **Age**: Age in years
+- **Outcome**: Binary target (0 = no diabetes, 1 = diabetes)
 
-Using **machine learning and feature engineering**, this project delivers a practical solution for diabetes prediction. The approach combines:
+Dataset source: [Kaggle - Pima Indians Diabetes Database](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
 
-- **Correlation Analysis**: Identifies the most relevant health indicators predictive of diabetes
-- **Feature Selection**: Removes low-impact variables to improve model efficiency and interpretability
-- **Logistic Regression**: Provides an interpretable, clinically-validated model for binary classification
-- **Performance Evaluation**: Uses multiple metrics to assess reliability across different patient populations
+## Features
 
-The workflow emphasizes **transparency and clinical applicability**, ensuring healthcare professionals can understand and trust the model's predictions.
+### Data Preprocessing
+- Missing value analysis
+- Correlation-based feature selection (threshold > 0.1)
+- Variance threshold filtering (threshold = 0.01)
+- Data standardization using StandardScaler
 
-## Project Features
+### Model Training
+- Train-test split (80/20)
+- Logistic Regression with 1000 max iterations
+- Random state = 64 for reproducibility
 
-- **Intelligent Feature Selection**: Reduces dimensionality while preserving predictive power
-- **Data Standardization**: Ensures fair weighting of all health measurements
-- **Visual Analytics**: Provides intuitive visualizations of risk factors by diabetes status
-- **Comprehensive Evaluation**: Reports accuracy, precision, recall, and confusion matrices
-- **Reproducible Pipeline**: Complete workflow from raw data to deployment-ready model
+### Evaluation Metrics
+- Accuracy Score
+- Confusion Matrix
+- Classification Report (Precision, Recall, F1-Score)
 
-## Technical Overview
+## Installation
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/diabetes-prediction.git
+cd diabetes-prediction
 
-- **Programming Language**: Python
-- **Core Libraries**: pandas, numpy, scikit-learn, seaborn, matplotlib
-- **Data Source**: Pima Indians Diabetes Database
-- **Model Used**: Logistic Regression with StandardScaler preprocessing
-- **Train-Test Split**: 80/20 ratio with random state 64
-
-The project is organized as follows:
+# Install required packages
+pip install pandas numpy scikit-learn matplotlib seaborn
