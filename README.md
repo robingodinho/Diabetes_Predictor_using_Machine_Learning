@@ -71,6 +71,7 @@ Model Predictions
 # Confusion Matrix
 
 [[92 13]
+
  [18 31]]
 
 # Key Findings
